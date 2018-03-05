@@ -1,6 +1,12 @@
-// var profileColor = document.addEventListener("click", function (){
-	
-// })
+var profileColor = document.querySelector(".imgborder");
+
+profileColor.addEventListener("mouseover", function (){
+	profileColor.setAttribute("style", "border: 7px solid #56b6ee;")
+});
+
+profileColor.addEventListener("mouseleave", function (){
+	profileColor.setAttribute("style", "border: 7px solid white;")
+});
 
 
 
