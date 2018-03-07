@@ -149,6 +149,8 @@ span:hover:before {
    font-family: "Gentium Basic";
   background-size: cover;
   background-attachment: fixed;
+  padding-bottom: 60px;
+  padding-top: 60px;
   
 }
 
@@ -224,7 +226,13 @@ input[type=submit]:hover {
 }
 
 
-
+*[id]:before { 
+  display: block; 
+  content: " "; 
+  margin-top: -75px; 
+  height: 75px; 
+  visibility: hidden; 
+}
 
 @media (max-width: 306px) { 
 .navbar-brand img {
