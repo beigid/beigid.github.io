@@ -7,13 +7,17 @@
 
 
 a.navbar-brand {
-    padding: 30px 30px;
+    padding: 0 30px;
     font-size: 45px;
     font-family: "Crete Round";
 }
 
 .navbar-right {
   font-family: Comfortaa;
+}
+
+.navbar-brand img {
+      max-height: 90px;
 }
 
 nav.navbar-default{
