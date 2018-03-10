@@ -12,8 +12,6 @@ profileColor.addEventListener("mouseleave", function (){
 
 
 
-
-
 (function ($) {
   $(document).ready(function(){
     
@@ -63,7 +61,5 @@ $(document).ready(function(){
   });
 });
 
-//Code made to adjust page scroll when using internal anchors
-// var shiftWindow = function() { scrollBy(0, -50) };
-// if (location.hash) shiftWindow();
-// window.addEventListener("hashchange", shiftWindow);
+
+
