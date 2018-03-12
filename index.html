@@ -146,37 +146,42 @@
 
   <section id="fourthsection">
     <div class="container contactcontainer">
-        <div class="row">
-            <div class="col-sm-12">
+     
+      <div class="row">
+        <div class="col-sm-12">
           <h2><span> Contact Me! </span> </h2>
         </div>
+      </div>
+      
       <div id="content">
-      <div class="row" id="contact">
-        <div class="col-sm-4 col-sm-offset-4">
-          <form enctype="text/plain" method="post" action="mailto:darya0108@yahoo.com">
-            <label for="firstname">First Name</label>
-            <input type="text" id="firstname" name="firstname" placeholder="Your name">
+        <div class="row" id="contact">
+          <div class="col-sm-4 col-sm-offset-4">
+            <form enctype="text/plain" method="post" action="mailto:darya0108@yahoo.com?subject=Website Contact Form">
+              <label for="firstname">First Name</label>
+              <input type="text" id="firstname" name="firstname" placeholder="Your name">
 
-            <label for="lastname">Last Name</label>
-            <input type="text" id="lastname" name="lastname" placeholder="Your last name">
+              <label for="lastname">Last Name</label>
+              <input type="text" id="lastname" name="lastname" placeholder="Your last name">
 
-            <label for="email">E-Mail</label>
-            <input type="text" id="email" name="email" placeholder="Your e-mail address">
+              <label for="email">E-Mail</label>
+              <input type="text" id="email" name="email" placeholder="Your e-mail address">
 
-            <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px"></textarea>
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something..." rows="5"></textarea>
+
+              <input type="submit" value="Send">
+            </form>
+          </div> 
+        </div>            
+      </div> 
           
-            <input type="submit" value="Send">
-             </form>
-              </div> 
-            </div>            
-        </div> 
-          
-           <div class="row">
+      <div class="row">
         <div class="col-sm-4 col-sm-offset-5">
-          <input class="btn btn-primary" type="submit" value="Submit">
+          <input class="btn btn-primary" name="contactbutton" type="button" value="Contact Me!">
         </div>
-    
+      </div>
+      
+    </div>
   </section>
 
    <footer>

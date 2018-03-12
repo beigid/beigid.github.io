@@ -251,17 +251,14 @@ input.btn-primary {
 }
 
 #content {
-   max-height:5px;
+  max-height: 0px;
   overflow: hidden;
 }
 
 #content.open {
   max-height: 1000px;
-  overflow: visible;
-  transition: max-height 1.5s, overflow 1.5s;
-
-  
-
+/*   overflow: visible; */
+  transition: max-height 1.5s ease-in;
 }
 
 

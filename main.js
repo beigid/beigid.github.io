@@ -13,7 +13,7 @@ profileColor.addEventListener("mouseleave", function (){
 
 //variables declared for form submit button and content in "contact" section
 var content = document.querySelector("#content");
-var button = document.querySelector("input.btn-primary");
+var button = document.querySelector("input[name='contactbutton']");
 
 button.addEventListener("click", function () {
 	
@@ -23,7 +23,6 @@ button.addEventListener("click", function () {
 	} else {
 		//Expand the box
 		content.setAttribute("class", "open");
-// 		content.setAttribute("style","overflow: visible");
 		button.setAttribute("style", "visibility: hidden;")
 			
 	}
