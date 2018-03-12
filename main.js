@@ -11,6 +11,27 @@ profileColor.addEventListener("mouseleave", function (){
 });
 
 
+//variables declared for form submit button and content in "contact" section
+var content = document.querySelector("#content");
+var button = document.querySelector("input.btn-primary");
+
+button.addEventListener("click", function () {
+	
+	if (content.className == "open"){
+		//expand the box and hide the button
+		content.setAttribute("class", "")
+	} else {
+		//Expand the box
+		content.setAttribute("class", "open");
+// 		content.setAttribute("style","overflow: visible");
+		button.setAttribute("style", "visibility: hidden;")
+			
+	}
+});
+
+
+
+
 
 (function ($) {
   $(document).ready(function(){
