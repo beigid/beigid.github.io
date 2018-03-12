@@ -295,4 +295,13 @@ input.btn-primary {
  div.sectioninformation {
     font-size:40px;
   }
+   input.btn-primary {
+    margin-left: 20px;
+`}
+}
+
+@media(min-width: 992px) {
+   input.btn-primary {
+    margin-left: 20px;
+  }
 }
