@@ -1,3 +1,14 @@
+// window.onLoad = function() {
+	
+	
+	
+	
+	
+	
+	
+// };
+
+
 
 //Code created to chnage profile image circle color when mouse hovers over
 var profileColor = document.querySelector(".imgborder");
