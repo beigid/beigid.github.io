@@ -45,7 +45,7 @@ function displayPanel(tabToActivate) {
 var profileColor = document.querySelector(".imgborder");
 
 profileColor.addEventListener("mouseover", function (){
-	profileColor.setAttribute("style", "border: 7px solid #56b6ee;")
+	profileColor.setAttribute("style", "border: 7px solid black;")
 });
 
 profileColor.addEventListener("mouseleave", function (){
