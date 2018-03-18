@@ -1,5 +1,4 @@
 
-
 // declare globals to hold all the links and all the panel elements
 var tabLinks;
 var tabPanels;
