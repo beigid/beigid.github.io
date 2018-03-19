@@ -85,6 +85,10 @@ li {
         h2 underline code
                             */
 
+#portfolio span {
+  color: white;
+}
+
 span {
   position: relative;
   color: black;

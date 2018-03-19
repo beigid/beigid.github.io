@@ -1,19 +1,28 @@
+//set global variable for image files
+var images=['images/Headshot_resize.png','images/Headshot_resize2.png'];
 
-// declare globals to hold all the links and all the panel elements
+//set interval for profile headshot image to change every 2 seconds
+setInterval(function(){
+  var imageLink = images[Math.floor(Math.random() * images.length)];
+  document.querySelector("#firstsection img").setAttribute("src",imageLink);  
+},2000);
+
+
+// declare global variables
 var tabLinks;
 var tabPanels;
 
-
+		
 		window.onload = function() {
     // when the page loads, grab the li elements
     tabLinks = document.getElementById("tabs").getElementsByTagName("li");
     // Now get all the tab panel container divs
     tabPanels = document.getElementById("containers").getElementsByTagName("div");
 
-    // activate the _first_ one
+   
     displayPanel(tabLinks[0]);
 
-    // attach event listener to links using onclick and onfocus, fire the displayPanel function, return false to disable the link
+    // attach event listener to links to fire the displayPanel function, return false to disable the link
     for (var i = 0; i < tabLinks.length; i++) {
         tabLinks[i].addEventListener("click",function() {
             displayPanel(this);
@@ -40,7 +49,7 @@ function displayPanel(tabToActivate) {
 
 
 
-//Code created to chnage profile image circle color when mouse hovers over
+//Code created to change profile image circle color when mouse hovers over
 var profileColor = document.querySelector(".imgborder");
 
 profileColor.addEventListener("mouseover", function (){
