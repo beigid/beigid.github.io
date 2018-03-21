@@ -367,14 +367,24 @@ input.btn-primary {
 /*
           Footer          */
 footer {
-   height:200px;
+   height:100px;
     background: none;
     background-color: black;
   
 
 }
 
+footer .social {
+    color:white;
+    padding-top: 30px;
+    text-align: center;
+  font-size:1.2em;
+}
 
+footer img {
+      margin: 0 auto;
+    display: block;
+}
 
 
 /*
