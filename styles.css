@@ -167,8 +167,12 @@ margin-bottom: 200px;
 
 
 #about.row, #portfolio.row, #contact.row {
-  margin-right: 80px;
-    margin-left: 80px;
+  margin-right: 40px;
+    margin-left: 40px;
+}
+
+#about p {
+  text-align:justify;
 }
 
 #firstsection {
@@ -179,6 +183,14 @@ margin-bottom: 200px;
   padding-bottom: 80px;
   padding-top: 80px;
   
+}
+
+#secondsection img {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 #fourthsection {
