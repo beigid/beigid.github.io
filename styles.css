@@ -389,6 +389,20 @@ footer img {
 }
 
 
+/* 
+
+           Grow Transition 
+                                        */
+
+.grow { 
+  transition: all .2s ease-in-out;
+}
+
+.grow:hover { 
+  transform: scale(1.1); 
+}
+
+
 /*
      Media Queries and before for anchor navigation margin
                                                               */
