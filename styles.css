@@ -403,7 +403,7 @@ footer img {
 
 /* 
 
-           Grow Transition 
+            Transitions
                                         */
 
 .grow { 
@@ -412,6 +412,13 @@ footer img {
 
 .grow:hover { 
   transform: scale(1.1); 
+}
+
+.shrink {
+transition: all .2s ease-in-out;
+}
+.shrink:hover {
+  transform: scale(.75)
 }
 
 
