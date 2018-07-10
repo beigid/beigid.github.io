@@ -62,6 +62,19 @@ profileColor.addEventListener("mouseleave", function (){
 });
 
 
+// var animatedBounce = document.querySelector(".animateBounce");
+
+// animatedBounce.addEventListener("mouseover", function (){
+// 	animatedBounce.setAttribute("class", "animated rubberBand")
+// });
+
+// animatedBounce.addEventListener("mouseleave", function (){
+// 	animatedBounce.removeAttribute("class", "animated rubberBand")
+// });
+
+
+
+
 //variables declared for form submit button and content in "contact" section
 var content = document.querySelector("#content");
 var button = document.querySelector("input[name='contactbutton']");
@@ -83,28 +96,79 @@ button.addEventListener("click", function () {
 
 
 
-(function ($) {
-  $(document).ready(function(){
+// (function ($) {
+//   $(document).ready(function(){
     
-	// hide .navbar first
-	$(".navbar").hide();
+// 	// hide .navbar first
+// 	$(".navbar").hide();
 	
-	// fade in .navbar
-	$(function () {
-		$(window).scroll(function () {
-            // set distance user needs to scroll before we fadeIn navbar
-			if ($(this).scrollTop() > 200) {
-				$('.navbar').fadeIn();
-			} else {
-				$('.navbar').fadeOut();
-			}
-		});
+// 	// fade in .navbar
+// 	$(function () {
+// 		$(window).scroll(function () {
+//             // set distance user needs to scroll before we fadeIn navbar
+// 			if ($(this).scrollTop() > 200) {
+// 				$('.navbar').fadeIn();
+// 			} else {
+// 				$('.navbar').fadeOut();
+// 			}
+// 		});
 
 	
-	});
+// 	});
+
+// });
+//   }(jQuery));
+
+
+$(function() { // jQuery shorthand for Ready
+
+  //Animation activates on hover for 'about' section with animate.css
+//   $('.animateBounce').hover(
+//     function(){ // acts as onmouseover
+//        $(this).addClass('animated rubberBand');
+//     },
+//     function() { // acts as onmouseout
+//         $(this).removeClass('animated rubberBand');
+//     }
+// );
+  
+  
+ setTimeout(function(){
+
+            $(".bounce").mouseenter(function (){
+
+                var el = $(this);
+
+                $(this).addClass('animated rubberBand');
+                $(this).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+
+                    el.removeClass('animated rubberBand');
+
+                });
+
+            });
+
+
+        },1000);
+ 
+  
+  // hide .navbar first
+  $(".navbar").hide();
+    
+  // fade in .navbar
+  $(window).scroll(function () {
+    // set distance user needs to scroll before we fadeIn navbar
+    if ($(this).scrollTop() > 200) {
+      $('.navbar').fadeIn();
+    } else {
+      $('.navbar').fadeOut();
+    }
+  });
 
 });
-  }(jQuery));
+
+
+
 
 
 $(document).ready(function(){

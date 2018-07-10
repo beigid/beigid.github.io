@@ -95,7 +95,7 @@ span {
   text-decoration: none;
 }
 
-span:before {
+h2 span:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -110,7 +110,7 @@ span:before {
   transition: all 0.3s ease-in-out 0s;
 }
 
-span:hover:before {
+h2 span:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
@@ -141,7 +141,7 @@ margin-bottom: 200px;
   padding-bottom: 50px;
 }
 
-#about span:hover, #portfolio span:hover, #fourthsection span:hover {
+#about h2 span:hover, #portfolio span:hover, #fourthsection span:hover {
     color: white;
     text-shadow: 2px 1px black;
 }
@@ -421,6 +421,9 @@ transition: all .2s ease-in-out;
   transform: scale(.75)
 }
 
+.bounce {
+  display: inline-block;
+}
 
 /*
      Media Queries and before for anchor navigation margin
