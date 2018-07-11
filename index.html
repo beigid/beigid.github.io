@@ -47,6 +47,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <body data-spy="scroll" data-target=".navbar">
 
+  <!-- Preloading Spinner-->
+
+  <!--CSS Spinner-->
+<div class="spinner-wrapper">
+  <div class="spinner">
+    <div class="dot1"></div>
+  <div class="dot2"></div>
+  </div>
+  </div>
+
+
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M66KF24"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -305,6 +316,19 @@ and applying HTML5, CSS3, and JavaScript.
   <script src="bootstrap/js/bootstrap.js"></script>
   <script src="main.js"></script>
 
+  <script>
+$(document).ready(function() {
+//Preloader
+$(window).on("load", function() {
+preloaderFadeOutTime = 2000;
+function hidePreloader() {
+var preloader = $('.spinner-wrapper');
+preloader.fadeOut(preloaderFadeOutTime);
+}
+hidePreloader();
+});
+});
+</script>
 
 </body>
 
