@@ -524,27 +524,27 @@ and applying HTML5, CSS3, and JavaScript.
   <script src="main.js"></script>
 
   <script>
-// $(document).ready(function() {
-// //Preloader
-// $(window).on("load", function() {
-// preloaderFadeOutTime = 2000;
-// function hidePreloader() {
-// var preloader = $('.spinner-wrapper');
-// preloader.fadeOut(preloaderFadeOutTime);
-// }
-// hidePreloader();
-// });
-// });
-
-$(function() {  
- $(window).on("load",function () {
-        setTimeout(function(){
-            $('.spinner-wrapper').fadeOut('slow', function () {
-            });
-        },300);
-
-    }); 
+$(document).ready(function() {
+//Preloader
+$(window).on("load", function() {
+preloaderFadeOutTime = 2000;
+function hidePreloader() {
+var preloader = $('.spinner-wrapper');
+preloader.fadeOut(preloaderFadeOutTime);
+}
+hidePreloader();
 });
+});
+
+// $(function() {  
+//  $(window).on("load",function () {
+//         setTimeout(function(){
+//             $('.spinner-wrapper').fadeOut('slow', function () {
+//             });
+//         },300);
+
+//     }); 
+// });
 </script>
 
 </body>
