@@ -302,6 +302,7 @@ div.sectioninformation{
   background-color: #333;
     border-radius: 5%;
   padding:15px;
+  cursor:pointer;
 }
 
 aside.projects {
@@ -376,6 +377,7 @@ aside.projects {
   transition: all ease .5s;
     opacity: 0;
     background-color: rgba(98, 108, 106, 0.9);
+  
 }
 
 
