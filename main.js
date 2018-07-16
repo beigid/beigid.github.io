@@ -8,47 +8,6 @@ setInterval(function(){
 },2000);
 
 
-// declare global variables
-var tabLinks;
-var tabPanels;
-
-		
-		window.onload = function() {
-    // when the page loads, grab the li elements
-    tabLinks = document.getElementById("tabs").getElementsByTagName("li");
-    // Now get all the tab panel container divs
-    tabPanels = document.getElementById("containers").getElementsByTagName("div");
-
-   
-    displayPanel(tabLinks[0]);
-
-    // attach event listener to links to fire the displayPanel function, return false to disable the link
-    for (var i = 0; i < tabLinks.length; i++) {
-        tabLinks[i].addEventListener("click",function(event) {
-            event.preventDefault();
-						displayPanel(this);
-            return false;
-        })
-    }
-}
-
-function displayPanel(tabToActivate) {
-    for (var i = 0; i < tabLinks.length; i++) {
-        if (tabLinks[i] == tabToActivate) {
-            // if it's the one to activate, change its class
-            tabLinks[i].classList.add("active");
-            // and display the corresponding panel
-            tabPanels[i].style.display = "block";
-        } else {
-            // remove the active class on the link
-            tabLinks[i].classList.remove("active");
-            // hide the panel
-            tabPanels[i].style.display = "none";
-        }
-    }
-}
-
-
 
 //Code created to change profile image circle color when mouse hovers over
 var profileColor = document.querySelector(".imgborder");
@@ -61,16 +20,6 @@ profileColor.addEventListener("mouseleave", function (){
 	profileColor.setAttribute("style", "border: 7px solid white;")
 });
 
-
-// var animatedBounce = document.querySelector(".animateBounce");
-
-// animatedBounce.addEventListener("mouseover", function (){
-// 	animatedBounce.setAttribute("class", "animated rubberBand")
-// });
-
-// animatedBounce.addEventListener("mouseleave", function (){
-// 	animatedBounce.removeAttribute("class", "animated rubberBand")
-// });
 
 
 
@@ -96,28 +45,6 @@ button.addEventListener("click", function () {
 
 
 
-// (function ($) {
-//   $(document).ready(function(){
-    
-// 	// hide .navbar first
-// 	$(".navbar").hide();
-	
-// 	// fade in .navbar
-// 	$(function () {
-// 		$(window).scroll(function () {
-//             // set distance user needs to scroll before we fadeIn navbar
-// 			if ($(this).scrollTop() > 200) {
-// 				$('.navbar').fadeIn();
-// 			} else {
-// 				$('.navbar').fadeOut();
-// 			}
-// 		});
-
-	
-// 	});
-
-// });
-//   }(jQuery));
 
 
 $(function() { // jQuery shorthand for Ready
@@ -195,6 +122,11 @@ $(document).ready(function(){
     } 
   });
 });
+
+
+
+
+
 
 
 

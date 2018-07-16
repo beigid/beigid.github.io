@@ -297,8 +297,11 @@ div.sectioninformation{
 #thirdsection img {
       width: 100%;
     max-width: 500px;
-    margin: 0 auto;
     display: block;
+    margin-bottom: 50px;
+  background-color: #333;
+    border-radius: 5%;
+  padding:15px;
 }
 
 aside.projects {
@@ -345,10 +348,6 @@ aside.projects {
     cursor:pointer;
 }
 
-#tabContainer {
-  margin: 30px 0;
-}
-
 #tabs > ul > .active{
     background: white; 
     cursor:pointer;
@@ -365,10 +364,70 @@ aside.projects {
     color: black;
 }
 
-#tabPanel1 h4, #tabPanel2 h4, #tabPanel3 h4 {
-  text-align:center;
-  font-size:25px;
+
+.portfolio-item {
+  position: relative;
+  display: block;
+  max-width: 25rem;
+
 }
+
+.portfolio .portfolio-item-caption:hover {
+  transition: all ease .5s;
+    opacity: 0;
+    background-color: rgba(98, 108, 106, 0.9);
+}
+
+
+
+
+
+/* 
+
+        Modal
+                         */
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
 
 
 
@@ -376,7 +435,7 @@ aside.projects {
 
 /*
         Form Submission
-                          */
+                                */
 
 
 
@@ -462,11 +521,13 @@ footer .social {
 
 footer img {
       margin: 0 auto;
-    display: block;
   padding-bottom:30px;
+  padding-right: 10px;
 }
 
-
+.iconcenter {
+  text-align:center;
+}
 /* 
 
             Transitions
@@ -485,6 +546,13 @@ transition: all .2s ease-in-out;
 }
 .shrink:hover {
   transform: scale(.75)
+}
+
+.miniShrink {
+transition: all .2s ease-in-out;
+}
+.miniShrink:hover {
+  transform: scale(.90)
 }
 
 .bounce {
