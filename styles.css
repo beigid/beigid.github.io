@@ -190,7 +190,7 @@ h2 span:hover:before {
                     */
 
 #thirdsection {
-   background-image: url("images/skyscraper.png");
+   background-image: url("images/skyscraper_resize.png");
   background-size: cover;
   background-attachment: fixed; 
   background-repeat: no-repeat;
@@ -242,7 +242,7 @@ margin-bottom: 200px;
 }
 
 #firstsection {
-  background-image: url("images/city.jpg");
+  background-image: url("images/city_resize.jpg");
    font-family: "Gentium Basic";
   background-size: cover;
   background-attachment: fixed;
