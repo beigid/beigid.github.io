@@ -444,6 +444,10 @@ aside.projects {
     width: 80%;
 }
 
+.modal button {
+  margin-top:20px;
+}
+
 /* The Close Button */
 /* .close {
     color: #aaaaaa;
