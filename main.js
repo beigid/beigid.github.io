@@ -1,5 +1,5 @@
 //set global variable for image files
-var images=['images/Headshot_resize_web.jpg','images/Headshot_resize2.2.png','images/Headshot_resize3.png'];
+var images=['images/Headshot_resize_web2.jpg','images/Headshot_resize2.png','images/Headshot_resize3.png'];
 
 //set interval for profile headshot image to change every 2 seconds
 setInterval(function(){
