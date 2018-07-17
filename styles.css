@@ -288,7 +288,38 @@ div.sectioninformation{
 }
 
 
+.tg-button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
 
+tg-margin-top {
+    margin-top: 16px!important;
+}
+
+.tg-light-grey, .tg-hover-light-grey:hover, .tg-light-gray, .tg-hover-light-gray:hover {
+    color: #000!important;
+    background-color: #f1f1f1!important;
+}
+
+.tg-button:hover {
+    color: #000!important;
+    background-color: #ccc!important;
+}
+
+#secondsection button {
+  display:block;
+  margin: 0 auto;
+}
 
 /*
       Portfolio   */
