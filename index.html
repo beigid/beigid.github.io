@@ -226,13 +226,13 @@ and applying HTML5, CSS3, and JavaScript.
         <div class="row">   
               <div class="col-sm-12 col-md-6">
                        <a href="#portfolioModal1" data-toggle="modal">
-         <img src="images/tatianagomez.JPG" class="portfolio-item miniShrink"> </a>
+         <img src="images/tatianagomez_resize.JPG" class="portfolio-item miniShrink"> </a>
                      
                </div>
           
            <div class="col-sm-12 col-md-6">
                        <a href="#portfolioModal2" data-toggle="modal">
-                         <img src="images/CoffeeBox.JPG" class="portfolio-item miniShrink"> </a>
+                         <img src="images/CoffeeBox_resize.JPG" class="portfolio-item miniShrink"> </a>
            </div>
         </div>
         
@@ -240,11 +240,11 @@ and applying HTML5, CSS3, and JavaScript.
         <div class="row">   
            <div class="col-sm-12 col-md-6">
                        <a href="#portfolioModal3" data-toggle="modal">
-               <img src="images/API_Superstore.JPG" class="portfolio-item miniShrink"></a>
+               <img src="images/API_Superstore_resize.JPG" class="portfolio-item miniShrink"></a>
           </div>
             <div class="col-sm-12 col-md-6">
                         <a href="#portfolioModal4" data-toggle="modal">
-               <img src="images/Wag_walkers.JPG" class="portfolio-item miniShrink"> </a>
+               <img src="images/Wag_walkers_resize.JPG" class="portfolio-item miniShrink"> </a>
             </div>
           </div>
         
@@ -279,7 +279,7 @@ and applying HTML5, CSS3, and JavaScript.
                 <div class="row">
                    
                         <div class="modal-content">
-                          <a href="https://beigid.github.io/tatianagomez.github.io/" target="_blank">  <img src="images/tatianagomez.JPG" class="img-responsive img-centered" alt="Capstone Project Final"> </a>
+                          <a href="https://beigid.github.io/tatianagomez.github.io/" target="_blank">  <img src="images/tatianagomez_resize.JPG" class="img-responsive img-centered" alt="Capstone Project Final"> </a>
                         </div>
                 
                     <div class="col-lg-6 modal-lowercase">
@@ -317,7 +317,7 @@ and applying HTML5, CSS3, and JavaScript.
                 <div class="row">
                    
                         <div class="modal-content">
-                         <a href="http://coffeebox.dbeigi.com/" target="_blank">   <img src="images/CoffeeBox.JPG" class="img-responsive img-centered" alt="Capstone Project Final"> </a>
+                         <a href="http://coffeebox.dbeigi.com/" target="_blank">   <img src="images/CoffeeBox_resize.JPG" class="img-responsive img-centered" alt="Capstone Project Final"> </a>
                         </div>
                 
                     <div class="col-lg-6 modal-lowercase">
@@ -355,7 +355,7 @@ and applying HTML5, CSS3, and JavaScript.
                 <div class="row">
                    
                         <div class="modal-content">
-                          <a href="https://beigid.github.io/API-Superstore/" target="_blank">  <img src="images/API_Superstore.JPG" class="img-responsive img-centered" alt="Capstone Project Final"> </a>
+                          <a href="https://beigid.github.io/API-Superstore/" target="_blank">  <img src="images/API_Superstore_resize.JPG" class="img-responsive img-centered" alt="Capstone Project Final"> </a>
                         </div>
                 
                     <div class="col-lg-6 modal-lowercase">
@@ -393,7 +393,7 @@ and applying HTML5, CSS3, and JavaScript.
                 <div class="row">
                    
                         <div class="modal-content">
-                           <a href="https://beigid.github.io/wag-walkers/" target="_blank"> <img src="images/Wag_walkers.JPG" class="img-responsive img-centered" alt="Capstone Project Final"> </a>
+                           <a href="https://beigid.github.io/wag-walkers/" target="_blank"> <img src="images/Wag_walkers_resize.JPG" class="img-responsive img-centered" alt="Capstone Project Final"> </a>
                         </div>
                 
                     <div class="col-lg-6 modal-lowercase">
@@ -527,24 +527,24 @@ and applying HTML5, CSS3, and JavaScript.
 $(document).ready(function() {
 //Preloader
 
-preloaderFadeOutTime = 2000;
-function hidePreloader() {
-var preloader = $('.spinner-wrapper');
-preloader.fadeOut(preloaderFadeOutTime);
-}
-hidePreloader();
-});
-
-
-// $(function() {  
-//  $(window).on("load",function () {
-//         setTimeout(function(){
-//             $('.spinner-wrapper').fadeOut('slow', function () {
-//             });
-//         },300);
-
-//     }); 
+// preloaderFadeOutTime = 2000;
+// function hidePreloader() {
+// var preloader = $('.spinner-wrapper');
+// preloader.fadeOut(preloaderFadeOutTime);
+// }
+// hidePreloader();
 // });
+
+
+$(function() {  
+ $(window).on("load",function () {
+        setTimeout(function(){
+            $('.spinner-wrapper').fadeOut('slow', function () {
+            });
+        },300);
+
+    }); 
+});
 </script>
 
 </body>
