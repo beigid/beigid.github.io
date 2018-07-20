@@ -189,6 +189,10 @@ h2 span:hover:before {
 
                     */
 
+body p {
+  color:black;
+}
+
 #thirdsection {
    background-image: url("images/skyscraper_resize.png");
   background-size: cover;
