@@ -26,6 +26,8 @@
   <link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Comfortaa|Crete+Round|Playfair+Display+SC" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119519177-1"></script>
@@ -50,16 +52,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </head>
 
 <body data-spy="scroll" data-target=".navbar">
+  <script>
+  AOS.init();
+</script>
 
   <!-- Preloading Spinner-->
 
   <!--CSS Spinner-->
-<div class="spinner-wrapper">
+<!-- <div class="spinner-wrapper">
   <div class="spinner">
     <div class="dot1"></div>
   <div class="dot2"></div>
   </div>
-  </div>
+  </div> -->
 
 
 <!-- Google Tag Manager (noscript) -->
@@ -112,27 +117,33 @@ gtag('event', 'click', {
 
 
 <!--        Intro           -->
+  <div data-aos="fade-down">
   <section id="firstsection">
     <div class="container-fluid">
       <div class="row" id="home">
         <div class="col-sm-12 col-md-7">
-     
+     <div data-aos="fade-right">
           <img src="images/Headshot_resize_web2.jpg" class="img-responsive img imgborder grow">
+        </div>
         </div>
         
       
         
-        
+        <div data-aos="fade-left">
         <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-lg-pull-1 sectioninformation">
           Hi, My name is Darya, and I'm a front-end web developer.
+        </div>
         </div>
 
       </div>
     </div>
   </section>
+  </div>
 
   
   <!--        About           -->
+  
+<div data-aos="zoom-in">
   <section id="secondsection">
     <div class="container">
       <div class="row" id="about">
@@ -219,6 +230,7 @@ and applying HTML5, CSS3, and JavaScript. Other technologies I have worked with 
          </div>
     </div>
   </section>
+  </div>
 
   
   <!--        Portfolio           -->
@@ -439,7 +451,8 @@ and applying HTML5, CSS3, and JavaScript. Other technologies I have worked with 
   
   
 <!--        Contact           -->
-  <section id="fourthsection">
+  <div data-aos="flip-left">
+    <section id="fourthsection">
     <div class="container contactcontainer" id="contactsection">
      
       <div class="row">
@@ -478,6 +491,7 @@ and applying HTML5, CSS3, and JavaScript. Other technologies I have worked with 
       
     </div>
   </section>
+</div>
 
    <footer>
          <div class="row">
