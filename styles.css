@@ -252,6 +252,12 @@ margin-bottom: 200px;
   
 }
 
+#firstsection img {
+  max-width:414px;
+  height:400px;
+  
+}
+
 #secondsection img {
   display: block;
   max-width: 100%;
@@ -281,11 +287,13 @@ div.container-fluid {
 }
 
 div.sectioninformation{
-  margin-top: 50px;
-  font-size: 60px;
-      color: white;
+      margin-top: 50px;
+    font-size: 60px;
+    color: white;
     text-shadow: 2px 2px black;
-      padding-left: 80px;
+    padding-left: 80px;
+    background: rgba(194, 199, 195, 0.3);
+    border-radius: 3%;
 }
 
 
@@ -335,6 +343,7 @@ tg-margin-top {
     border-radius: 5%;
   padding:15px;
   cursor:pointer;
+  height: 280px;
 }
 
 aside.projects {
@@ -634,21 +643,32 @@ transition: all .2s ease-in-out;
 }
   
 
-@media (min-width: 768px) { 
- max-height: 80px;
-    padding-top: 10px;
-}
-
 @media (max-width: 768px) { 
-  .navbar-brand img{
- max-height: 60px;
+
+    #firstsection img {
+    max-width:414px;
+    width:100%;
+    height:auto;
   }
- div.sectioninformation {
-    font-size:40px;
+
+    #thirdsection img {
+      height: auto;
+      padding:5px;
+    }
+
+    .navbar-brand img{
+  max-height: 60px;
+    }
+  div.sectioninformation {
+      font-size:40px;
+    }
+    #about p {
+    font-size: 15px;
   }
-  #about p {
-  font-size: 15px;
-}
-   
+
+  #portfolio.row {
+    margin: 0 auto;
+  }
+    
 }
 
