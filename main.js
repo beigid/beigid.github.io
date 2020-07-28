@@ -9,6 +9,21 @@ setInterval(function(){
 
 
 
+//Code to add animated bounce to about me section
+ let str, res, newDiv
+ 	newDiv = document.querySelector(".bounce-start")
+ 	str = "A determined, highly motivated young professional in Seattle whose career objective is to excel and grow within the ecosphere of development. By utilizing past work experience and expanding on new skills, the trajectory of work-place success will be brought to fruition by learning new abilities, ideologies, and technologies that will facilitate a successful career pathway.";
+	res = str.split(" ");
+  console.log(res)
+    for(var i = 0; i < res.length; i++) {
+	 let newP = document.createElement("span");
+     newP.setAttribute("class", "bounce animateBounce")
+	newP.innerHTML = ` ${res[i]}`
+    newDiv.appendChild(newP)
+	}
+
+
+
 //Code created to change profile image circle color when mouse hovers over
 var profileColor = document.querySelector(".imgborder");
 

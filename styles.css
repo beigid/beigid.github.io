@@ -211,6 +211,11 @@ margin-bottom: 200px;
   padding-bottom: 50px;
 }
 
+#secondsection p.bounce-start {
+  padding-bottom: 0;
+  white-space: break-spaces;
+}
+
 #about h2 span:hover, #portfolio span:hover, #fourthsection span:hover {
     color: white;
     text-shadow: 2px 1px black;
