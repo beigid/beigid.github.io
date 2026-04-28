@@ -26,6 +26,8 @@ const handleSubmit = (e) => {
         <li><a href="#about" class="hover:text-purple-400 transition-colors">About</a></li>
         <li><a href="#projects" class="hover:text-purple-400 transition-colors">Projects</a></li>
         <li><a href="#contact" class="hover:text-purple-400 transition-colors">Contact</a></li>
+        <li><a href="/dbeigi_resume.pdf" download
+               class="px-4 py-2 border border-purple-500/50 rounded-full hover:bg-purple-500/10 transition-colors text-purple-400">Resume</a></li>
       </ul>
     </nav>
 
@@ -37,7 +39,7 @@ const handleSubmit = (e) => {
             <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-purple-600">BEIGI.</span>
           </h1>
           <p class="text-base md:text-lg text-zinc-400 leading-relaxed max-w-md mx-auto md:mx-0">
-            Software Engineer. Specializing in high-performance web systems.
+            Software Engineer. <br/>Specializing in high-performance web systems.
           </p>
           <div class="pt-4 flex flex-wrap gap-4 justify-center md:justify-start">
             <a href="#projects" class="w-full md:w-auto inline-flex items-center justify-center px-10 py-4 bg-purple-600 hover:bg-purple-500 text-white font-bold rounded-full transition-all shadow-[0_0_30px_rgba(147,51,234,0.3)] uppercase tracking-widest text-xs">
@@ -53,7 +55,7 @@ const handleSubmit = (e) => {
             <img
                 :src="profilePic"
                 alt="Darya Beigi"
-                class="relative w-64 h-64 md:w-96 md:h-96 object-cover rounded-full border border-white/10 z-10 shadow-2xl muted-portrait animate-spin-slow"
+                class="relative w-64 h-64 md:w-96 md:h-96 object-cover rounded-full border border-white/10 z-10 shadow-2xl animate-spin-slow hover:animate-none hover:-translate-y-3 transition-all duration-700 ease-out cursor-pointer"
             />
           </div>
         </div>
@@ -64,9 +66,9 @@ const handleSubmit = (e) => {
       <div class="max-w-4xl mx-auto">
         <h2 class="text-purple-500 font-mono text-sm mb-8 text-center tracking-widest uppercase">// About Me</h2>
         <p class="text-2xl md:text-4xl text-zinc-300 leading-tight font-light mb-16 md:mb-24 text-center md:text-left">
-          I’m a software engineer with <span class="text-white font-medium">5+ years of experience</span> developing
-          production web applications. I focus on building maintainable systems and improving team efficiency through
-          better tooling.
+          Hello! I’m Darya. I'm a software engineer from Seattle with <span class="text-white font-medium">6+ years of
+          experience</span> developing  production web applications. I focus on building maintainable systems and
+          improving team efficiency through better tooling.
         </p>
 
         <div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 pt-12 border-t border-white/5">
@@ -101,12 +103,14 @@ const handleSubmit = (e) => {
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                 </div>
-                <span class="text-[9px] md:text-[10px] text-zinc-500 uppercase tracking-widest font-black">Present</span>
+                <span
+                    class="text-[9px] md:text-[10px] text-zinc-500 uppercase tracking-widest font-black">Professional
+                  Experience
+                </span>
               </div>
               <h3 class="text-2xl md:text-3xl font-bold mb-3">onDiem</h3>
               <p class="text-sm md:text-base text-zinc-400 leading-relaxed mb-6 md:mb-8">
-                Scaling a staffing platform for dental professionals. Focused on building high-performance APIs and optimizing the Vue.js frontend for seamless scheduling.
-              </p>
+                Architecting a nationwide dental staffing platform. Since 2020, I have led the evolution of our Ruby on Rails API and Vue.js ecosystem, scaling the system to support seamless scheduling for thousands of professionals.              </p>
               <div class="flex flex-wrap gap-2 md:gap-3 mb-8 md:mb-10">
                 <span class="text-[9px] md:text-[10px] px-3 py-1 bg-white/10 rounded-full text-zinc-300 font-mono uppercase">Vue.js</span>
                 <span class="text-[9px] md:text-[10px] px-3 py-1 bg-white/10 rounded-full text-zinc-300 font-mono uppercase">Rails</span>
@@ -118,7 +122,6 @@ const handleSubmit = (e) => {
               <a href="https://ondiem.com" target="_blank" class="text-[10px] uppercase tracking-[0.2em] text-purple-400 hover:text-white transition-colors font-bold flex items-center gap-2">
                 Visit onDiem.com <span class="text-lg">↗</span>
               </a>
-              <span class="text-[9px] text-zinc-600 font-mono italic">Proprietary</span>
             </div>
           </div>
 
@@ -134,8 +137,8 @@ const handleSubmit = (e) => {
               </div>
               <h3 class="text-2xl md:text-3xl font-bold mb-3">Finance API</h3>
               <p class="text-sm md:text-base text-zinc-400 leading-relaxed mb-6 md:mb-8">
-                Built a robust financial tracking engine using FastAPI and PostgreSQL. Implemented automated migrations with Alembic and JWT-based authentication.
-              </p>
+                High-performance financial engine built with a modern Python stack. Engineered with a focus on data
+                integrity and security, utilizing FastAPI and PostgreSQL with fully automated migration workflows via Alembic.</p>
               <div class="flex flex-wrap gap-2 md:gap-3 mb-8 md:mb-10">
                 <span class="text-[9px] md:text-[10px] px-3 py-1 bg-white/10 rounded-full text-zinc-300 font-mono uppercase">React</span>
                 <span class="text-[9px] md:text-[10px] px-3 py-1 bg-white/10 rounded-full text-zinc-300 font-mono uppercase">FastAPI</span>
@@ -148,6 +151,99 @@ const handleSubmit = (e) => {
                 GitHub <span class="text-lg">↗</span>
               </a>
               <a href="https://finance-app.dbeigi.com" target="_blank" class="text-[10px] uppercase tracking-[0.2em] text-purple-400 hover:text-white transition-colors font-bold flex items-center gap-2">
+                Live App <span class="text-lg">↗</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="group relative p-6 md:p-10 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-xl hover:border-purple-500/50 transition-all duration-500 flex flex-col text-left">
+            <div class="flex-grow">
+              <div class="flex justify-between items-start mb-6 md:mb-8">
+                <div class="p-3 md:p-4 bg-purple-600/20 rounded-2xl text-purple-400">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 md:h-6 md:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                  </svg>
+                </div>
+                <span class="text-[9px] md:text-[10px] text-zinc-500 uppercase tracking-widest font-black">Side Project</span>
+              </div>
+              <h3 class="text-2xl md:text-3xl font-bold mb-3">Sam Bowie Construction Company</h3>
+              <p class="text-sm md:text-base text-zinc-400 leading-relaxed mb-6 md:mb-8">
+                End-to-end digital presence for an independent construction company. Developed a responsive,
+                image-heavy brand experience using React and Tailwind, focusing on performance optimization for high-resolution portfolio displays.              </p>
+              <div class="flex flex-wrap gap-2 md:gap-3 mb-8 md:mb-10">
+                <span class="text-[9px] md:text-[10px] px-3 py-1 bg-white/10 rounded-full text-zinc-300 font-mono uppercase">React</span>
+                <span
+                    class="text-[9px] md:text-[10px] px-3 py-1 bg-white/10 rounded-full text-zinc-300 font-mono uppercase">Tailwind</span>
+              </div>
+            </div>
+            <div class="pt-6 border-t border-white/5 flex gap-6 md:gap-8">
+              <a href="https://github.com/beigid/sambowie" target="_blank" class="text-[10px] uppercase tracking-[0.2em] text-purple-400 hover:text-white transition-colors font-bold flex items-center gap-2">
+                GitHub <span class="text-lg">↗</span>
+              </a>
+              <a href="https://bowie-dream-spaces.com/" target="_blank" class="text-[10px] uppercase tracking-[0.2em] text-purple-400 hover:text-white transition-colors font-bold flex items-center gap-2">
+                Live App <span class="text-lg">↗</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="group relative p-6 md:p-10 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-xl hover:border-purple-500/50 transition-all duration-500 flex flex-col text-left">
+            <div class="flex-grow">
+              <div class="flex justify-between items-start mb-6 md:mb-8">
+                <div class="p-3 md:p-4 bg-purple-600/20 rounded-2xl text-purple-400">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 md:h-6 md:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <span class="text-[9px] md:text-[10px] text-zinc-500 uppercase tracking-widest font-black">Side Project</span>
+              </div>
+              <h3 class="text-2xl md:text-3xl font-bold mb-3">Workout Tracker</h3>
+              <p class="text-sm md:text-base text-zinc-400 leading-relaxed mb-6 md:mb-8">
+                Comprehensive tracking platform utilizing the MERN stack. Features management and history to track
+                long-term fitness goals.  </p>
+              <div class="flex flex-wrap gap-2 md:gap-3 mb-8 md:mb-10">
+                <span class="text-[9px] md:text-[10px] px-3 py-1 bg-white/10 rounded-full text-zinc-300 font-mono uppercase">React</span>
+                <span class="text-[9px] md:text-[10px] px-3 py-1 bg-white/10 rounded-full text-zinc-300 font-mono uppercase">MongoDB</span>
+                <span class="text-[9px] md:text-[10px] px-3 py-1 bg-white/10 rounded-full text-zinc-300 font-mono uppercase">Express</span>
+
+              </div>
+            </div>
+            <div class="pt-6 border-t border-white/5 flex gap-6 md:gap-8">
+              <a href="https://github.com/beigid/Workout-Tracker" target="_blank" class="text-[10px] uppercase tracking-[0.2em] text-purple-400 hover:text-white transition-colors font-bold flex items-center gap-2">
+                GitHub <span class="text-lg">↗</span>
+              </a>
+              <a href="https://workout-app.dbeigi.com" target="_blank"
+                 class="text-[10px] uppercase tracking-[0.2em] text-purple-400 hover:text-white transition-colors font-bold flex items-center gap-2">
+                Live App <span class="text-lg">↗</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="group relative p-6 md:p-10 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-xl hover:border-purple-500/50 transition-all duration-500 flex flex-col text-left">
+            <div class="flex-grow">
+              <div class="flex justify-between items-start mb-6 md:mb-8">
+                <div class="p-3 md:p-4 bg-purple-600/20 rounded-2xl text-purple-400">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 md:h-6 md:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.99 7.99 0 0121 13a8.003 8.003 0 01-3.343 5.657z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14l-5 2 5 2 1.015-3z" />
+                  </svg>
+                </div>
+                <span class="text-[9px] md:text-[10px] text-zinc-500 uppercase tracking-widest font-black">Experimental</span>
+              </div>
+              <h3 class="text-2xl md:text-3xl font-bold mb-3">Blow Out the Candle</h3>
+              <p class="text-sm md:text-base text-zinc-400 leading-relaxed mb-6 md:mb-8">
+                An interactive web experience utilizing the Web Audio API to detect microphone frequency peaks. Engineered real-time audio processing logic to trigger CSS-driven animations, simulating the physical act of blowing out a digital candle.
+              </p>
+              <div class="flex flex-wrap gap-2 md:gap-3 mb-8 md:mb-10">
+                <span class="text-[9px] md:text-[10px] px-3 py-1 bg-white/10 rounded-full text-zinc-300 font-mono uppercase">JavaScript</span>
+                <span class="text-[9px] md:text-[10px] px-3 py-1 bg-white/10 rounded-full text-zinc-300 font-mono uppercase">Web Audio API</span>
+                <span class="text-[9px] md:text-[10px] px-3 py-1 bg-white/10 rounded-full text-zinc-300 font-mono uppercase">CSS3</span>
+              </div>
+            </div>
+            <div class="pt-6 border-t border-white/5 flex gap-6 md:gap-8">
+              <a href="https://github.com/beigid/blow-out-the-candle" target="_blank" class="text-[10px] uppercase tracking-[0.2em] text-purple-400 hover:text-white transition-colors font-bold flex items-center gap-2">
+                GitHub <span class="text-lg">↗</span>
+              </a>
+              <a href="https://candle.dbeigi.com/" target="_blank" class="text-[10px] uppercase tracking-[0.2em] text-purple-400 hover:text-white transition-colors font-bold flex items-center gap-2">
                 Live App <span class="text-lg">↗</span>
               </a>
             </div>
@@ -168,7 +264,7 @@ const handleSubmit = (e) => {
               Let's build <br/><span class="text-zinc-500">awesome stuff.</span>
             </h3>
             <p class="text-zinc-400 mb-10 text-base md:text-lg leading-relaxed max-w-md mx-auto md:mx-0">
-              I'm currently looking for new software engineering roles in the Seattle area. Reach out if you want to collaborate!
+              I'm currently looking for new software engineering roles. Reach out if you want to collaborate!
             </p>
 
             <div class="flex justify-center md:justify-start gap-4">
@@ -208,7 +304,6 @@ const handleSubmit = (e) => {
             >
               <input type="hidden" name="form-name" value="contact" />
               <p class="hidden"><label><input name="bot-field" /></label></p>
-
               <div>
                 <label class="block text-[10px] uppercase tracking-widest text-zinc-500 font-bold mb-2 ml-1">Name</label>
                 <input type="text" name="name" required class="w-full bg-zinc-900/50 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-purple-500 transition-colors" placeholder="Darya Beigi" />

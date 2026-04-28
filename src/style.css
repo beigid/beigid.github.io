@@ -36,15 +36,6 @@ html {
   filter: invert(1) hue-rotate(255deg) saturate(4) brightness(1) contrast(1.2);
 }
 
-.muted-portrait {
-  filter: sepia(0.5) contrast(1.1) brightness(0.9) grayscale(0.3);
-  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.group:hover .muted-portrait {
-  filter: sepia(0) contrast(1) brightness(1) grayscale(0);
-}
-
 @keyframes entry-spin {
   0% {
     transform: rotate(-180deg) scale(0);
